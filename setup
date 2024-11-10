@@ -2,4 +2,6 @@ pkg update
 pkg install python
 pkg install yt-dlp or Pip install yt-dlp
 pkg install ffmpeg
+pkg install git
 termux-setup-storage
+git clone https://github.com/TheeUnbothered/music_downloader.git
