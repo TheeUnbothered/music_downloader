@@ -1,0 +1,5 @@
+pkg update
+pkg install python
+pkg install yt-dlp or Pip install yt-dlp
+pkg install ffmpeg
+termux-setup-storage
