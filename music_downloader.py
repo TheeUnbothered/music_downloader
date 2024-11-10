@@ -1,6 +1,22 @@
 import os
 import subprocess
 
+def display_logo():
+    # Clear the screen
+    os.system('clear' if os.name == 'posix' else 'cls')
+    
+    # Display the "TME" logo
+    logo = """
+████████╗███████╗████████╗
+╚══██╔══╝██╔════╝╚══██╔══╝
+   ██║   █████╗     ██║
+   ██║   ██╔══╝     ██║
+   ██║   ███████╗   ██║
+   ╚═╝   ╚══════╝   ╚═╝
+    """
+    print(logo)
+    print("Welcome to Termux Made Easy! Type 'exit' to quit.")
+
 def download_song(song_name, artist):
     # Construct the search query
     query = f"{song_name} {artist}"
@@ -16,7 +32,7 @@ def download_song(song_name, artist):
         print("Error downloading the song. Please try again.")
 
 if __name__ == "__main__":
-    print("Welcome to the music downloader! Type 'exit' to quit.")
+    display_logo()
     
     while True:
         # Ask user for song name and artist
